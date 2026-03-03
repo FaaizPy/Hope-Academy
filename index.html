@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Hope Academy Rawalpindi – Quality Education, Strong Character, Real Results. Enrolling now for Primary & Secondary classes."/>
+<meta name="keywords" content="Hope Academy Rawalpindi, school Rawalpindi, tuition Rawalpindi, private academy Pakistan, admission 2025"/>
+<meta name="author" content="Hope Academy"/>
+<meta property="og:title" content="Hope Academy – Building Bright Futures"/>
+<meta property="og:description" content="Academic Excellence • Strong Character • Real Results. Located in Dhoke Kashmirian, Rawalpindi."/>
+<title>Hope Academy | Building Bright Futures – Rawalpindi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0c1e3e;
+  --blue:#1a3a6e;
+  --blue-m:#1e4896;
+  --blue-v:#2356b4;
+  --sky:#4a90d9;
+  --emerald:#059669;
+  --emerald-l:#34d399;
+  --gold:#c9a84c;
+  --white:#ffffff;
+  --off:#f7f9fc;
+  --light:#eef2f9;
+  --text:#1c2b45;
+  --muted:#5a6e8a;
+  --border:rgba(26,56,110,0.12);
+  --shadow:0 4px 30px rgba(12,30,62,0.10);
+  --shadow-lg:0 12px 50px rgba(12,30,62,0.16);
+  --fd:"Playfair Display",serif;
+  --fs:"Cormorant Garamond",serif;
+  --fb:"Plus Jakarta Sans",sans-serif;
+  --radius:12px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--text);font-family:var(--fb);font-size:16px;line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-thumb{background:var(--blue-v);border-radius:2px}
+img{max-width:100%;display:block}
+
+/* ===== UTILITY ===== */
+.container{max-width:1180px;margin:0 auto;padding:0 5%}
+.section-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--fb);font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue-v);margin-bottom:0.9rem}
+.section-eyebrow::before{content:"";width:28px;height:2px;background:var(--emerald)}
+.section-title{font-family:var(--fd);font-size:clamp(2rem,4.5vw,3.2rem);font-weight:900;color:var(--navy);line-height:1.1;margin-bottom:0.8rem}
+.section-title .em{color:var(--blue-v)}
+.section-title .gn{color:var(--emerald)}
+.section-sub{font-size:1.05rem;color:var(--muted);max-width:560px;line-height:1.8}
+.divider{width:52px;height:3px;background:linear-gradient(90deg,var(--blue-v),var(--emerald));border-radius:2px;margin:1.2rem 0 2.5rem}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.vis{opacity:1;transform:translateY(0)}
+.reveal-l{opacity:0;transform:translateX(-30px);transition:opacity 0.8s ease,transform 0.8s ease}
+.reveal-l.vis{opacity:1;transform:translateX(0)}
+.reveal-r{opacity:0;transform:translateX(30px);transition:opacity 0.8s ease,transform 0.8s ease}
+.reveal-r.vis{opacity:1;transform:translateX(0)}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 5%;transition:all 0.4s}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;transition:height 0.3s}
+nav.scrolled{background:rgba(255,255,255,0.97);box-shadow:0 2px 24px rgba(12,30,62,0.10);backdrop-filter:blur(20px)}
+nav.scrolled .nav-inner{height:62px}
+.nav-logo{display:flex;align-items:center;gap:0.7rem;text-decoration:none}
+.logo-icon{width:42px;height:42px;background:linear-gradient(135deg,var(--blue-v),var(--navy));border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.2rem;font-weight:900;color:white;box-shadow:0 4px 14px rgba(35,86,180,0.35);flex-shrink:0}
+.logo-text{display:flex;flex-direction:column;line-height:1.15}
+.logo-name{font-family:var(--fd);font-size:1.2rem;font-weight:900;color:var(--navy);letter-spacing:0.5px}
+.logo-sub{font-family:var(--fb);font-size:0.6rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-weight:600}
+nav.scrolled .logo-name{color:var(--navy)}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{font-family:var(--fb);font-size:0.88rem;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none;transition:color 0.25s;letter-spacing:0.3px}
+nav.scrolled .nav-links a{color:var(--muted)}
+.nav-links a:hover{color:white}
+nav.scrolled .nav-links a:hover{color:var(--blue-v)}
+.nav-btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 1.4rem;background:var(--emerald);color:white;font-family:var(--fb);font-size:0.82rem;font-weight:700;letter-spacing:0.5px;border-radius:50px;text-decoration:none;transition:all 0.25s;box-shadow:0 4px 16px rgba(5,150,105,0.3)}
+.nav-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(5,150,105,0.4)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:24px;height:2px;border-radius:2px;background:white;transition:all 0.3s}
+nav.scrolled .hamburger span{background:var(--navy)}
+
+/* MOBILE MENU */
+.mob-menu{display:none;position:fixed;inset:0;background:rgba(12,30,62,0.98);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:2rem;backdrop-filter:blur(20px)}
+.mob-menu.open{display:flex}
+.mob-menu a{font-family:var(--fd);font-size:2rem;font-weight:700;color:white;text-decoration:none;opacity:0.85;transition:all 0.2s}
+.mob-menu a:hover{color:var(--emerald-l);opacity:1}
+.mob-close{position:absolute;top:1.5rem;right:5%;background:none;border:1px solid rgba(255,255,255,0.2);color:white;font-size:1.4rem;padding:0.4rem 0.9rem;cursor:pointer;border-radius:6px}
+.mob-enroll{padding:0.85rem 2.5rem;background:var(--emerald);color:white;border-radius:50px;font-family:var(--fb);font-weight:700;font-size:1rem;text-decoration:none;margin-top:0.5rem}
+
+/* ===== HERO ===== */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+.hero-bg-geo{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-bg-geo::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#0c1e3e 0%,#1a3a6e 40%,#1e4896 70%,#0c2d5a 100%)}
+.geo-circle{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,0.05)}
+.gc1{width:700px;height:700px;top:-200px;right:-150px;border-width:60px;border-color:rgba(255,255,255,0.04);background:radial-gradient(circle,rgba(35,86,180,0.2),transparent 70%)}
+.gc2{width:400px;height:400px;bottom:-100px;left:-80px;border-color:rgba(74,144,217,0.12)}
+.gc3{width:200px;height:200px;top:35%;left:55%;border-color:rgba(5,150,105,0.15)}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.07) 1px,transparent 1px);background-size:36px 36px;z-index:1}
+.hero-glow{position:absolute;top:20%;right:15%;width:400px;height:400px;background:radial-gradient(circle,rgba(35,86,180,0.3) 0%,transparent 70%);z-index:1;animation:glowPulse 5s ease-in-out infinite alternate}
+@keyframes glowPulse{from{opacity:0.6;transform:scale(0.9)}to{opacity:1;transform:scale(1.1)}}
+
+.hero-inner{position:relative;z-index:3;display:grid;grid-template-columns:1.1fr 0.9fr;gap:4rem;align-items:center;padding:7rem 5% 5rem;max-width:1180px;margin:0 auto;width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:0.6rem;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(10px);padding:0.45rem 1rem;border-radius:50px;font-family:var(--fb);font-size:0.72rem;font-weight:600;color:rgba(255,255,255,0.9);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:1.8rem;opacity:0;animation:fadeUp 0.6s 0.3s forwards}
+.hero-tag-dot{width:7px;height:7px;background:var(--emerald-l);border-radius:50%;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+.hero-h1{font-family:var(--fd);font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:900;color:white;line-height:1.08;margin-bottom:1.3rem;opacity:0;animation:fadeUp 0.7s 0.5s forwards}
+.hero-h1 .line2{color:var(--emerald-l)}
+.hero-tagline{font-family:var(--fb);font-size:1.05rem;color:rgba(255,255,255,0.7);margin-bottom:0.8rem;letter-spacing:1px;opacity:0;animation:fadeUp 0.7s 0.65s forwards}
+.hero-tagline span{color:rgba(255,255,255,0.9);font-weight:600}
+.hero-tagline span::after{content:" •";color:var(--emerald-l)}
+.hero-tagline span:last-child::after{content:""}
+.hero-urdu{font-family:'Noto Nastaliq Urdu','Jameel Noori Nastaleeq','Traditional Arabic',serif;font-size:1.1rem;color:rgba(201,168,76,0.9);margin-bottom:2.5rem;direction:rtl;text-align:left;opacity:0;animation:fadeUp 0.7s 0.75s forwards;font-style:italic}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3.5rem;opacity:0;animation:fadeUp 0.7s 0.9s forwards}
+.btn-enroll{display:inline-flex;align-items:center;gap:0.6rem;padding:1rem 2.2rem;background:var(--emerald);color:white;font-family:var(--fb);font-size:0.9rem;font-weight:700;border-radius:50px;text-decoration:none;transition:all 0.3s;box-shadow:0 6px 24px rgba(5,150,105,0.4);letter-spacing:0.3px}
+.btn-enroll:hover{transform:translateY(-3px);box-shadow:0 10px 35px rgba(5,150,105,0.5)}
+.btn-call{display:inline-flex;align-items:center;gap:0.6rem;padding:1rem 2.2rem;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:white;font-family:var(--fb);font-size:0.9rem;font-weight:600;border-radius:50px;text-decoration:none;transition:all 0.3s;backdrop-filter:blur(10px)}
+.btn-call:hover{background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.4)}
+.hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;opacity:0;animation:fadeUp 0.7s 1.05s forwards}
+.stat-card{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(12px);border-radius:14px;padding:1.1rem 1.3rem;transition:all 0.3s}
+.stat-card:hover{background:rgba(255,255,255,0.13);transform:translateY(-3px)}
+.stat-num{font-family:var(--fd);font-size:2rem;font-weight:900;color:white;line-height:1;display:flex;align-items:baseline;gap:2px}
+.stat-num sup{font-size:0.8rem;color:var(--emerald-l);font-weight:700}
+.stat-label{font-family:var(--fb);font-size:0.72rem;color:rgba(255,255,255,0.6);letter-spacing:1px;text-transform:uppercase;margin-top:3px;font-weight:500}
+
+/* HERO VISUAL */
+.hero-visual{position:relative;opacity:0;animation:fadeIn 1s 0.6s forwards;display:flex;justify-content:center;align-items:center}
+.visual-card-main{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(20px);border-radius:24px;padding:2.5rem;width:100%;max-width:360px;position:relative;overflow:hidden}
+.visual-card-main::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue-v),var(--emerald))}
+.vc-icon{width:70px;height:70px;background:linear-gradient(135deg,var(--blue-v),var(--navy));border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:2rem;margin-bottom:1.5rem;box-shadow:0 8px 24px rgba(12,30,62,0.3)}
+.vc-title{font-family:var(--fd);font-size:1.5rem;font-weight:900;color:white;margin-bottom:0.4rem}
+.vc-sub{font-size:0.82rem;color:rgba(255,255,255,0.6);margin-bottom:1.8rem}
+.vc-progress{margin-bottom:0.8rem}
+.vcp-label{display:flex;justify-content:space-between;font-size:0.75rem;color:rgba(255,255,255,0.7);margin-bottom:0.4rem;font-weight:500}
+.vcp-bar{height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden}
+.vcp-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue-v),var(--emerald))}
+.vcp-fill.f95{width:95%;animation:fillBar 1.5s 1.5s both ease-out}
+.vcp-fill.f90{width:90%;animation:fillBar 1.5s 1.7s both ease-out}
+.vcp-fill.f88{width:88%;animation:fillBar 1.5s 1.9s both ease-out}
+@keyframes fillBar{from{width:0}to{width:var(--fw)}}
+.float-badge{position:absolute;background:white;border-radius:12px;padding:0.7rem 1rem;box-shadow:0 8px 30px rgba(12,30,62,0.18);display:flex;align-items:center;gap:0.6rem}
+.fb1{top:-20px;right:-20px;animation:floatY 4s ease-in-out infinite}
+.fb2{bottom:-15px;left:-20px;animation:floatY 4s 1.5s ease-in-out infinite}
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.fb-icon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.fb-icon.gr{background:linear-gradient(135deg,rgba(5,150,105,0.12),rgba(52,211,153,0.1))}
+.fb-icon.bl{background:linear-gradient(135deg,rgba(26,56,110,0.1),rgba(35,86,180,0.1))}
+.fb-text{font-family:var(--fb);font-size:0.7rem;font-weight:700;color:var(--text);line-height:1.3}
+.fb-text span{color:var(--muted);font-weight:400}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* SCROLL INDICATOR */
+.scroll-ind{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:0.5rem;opacity:0;animation:fadeIn 1s 1.8s forwards}
+.scroll-mouse{width:26px;height:40px;border:2px solid rgba(255,255,255,0.25);border-radius:13px;display:flex;justify-content:center;padding-top:6px}
+.scroll-wheel{width:3px;height:8px;background:rgba(255,255,255,0.6);border-radius:2px;animation:scrollDown 2s ease-in-out infinite}
+@keyframes scrollDown{0%{transform:translateY(0);opacity:1}100%{transform:translateY(12px);opacity:0}}
+.scroll-text{font-family:var(--fb);font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+
+/* ===== TRUST BAR ===== */
+.trust-bar{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.2rem 5%;overflow:hidden}
+.trust-track{display:flex;animation:ticker 22s linear infinite;white-space:nowrap;align-items:center}
+.trust-item{display:inline-flex;align-items:center;gap:0.6rem;padding:0 2.5rem;font-family:var(--fb);font-size:0.78rem;font-weight:600;color:var(--muted);letter-spacing:0.5px}
+.trust-item .dot{width:6px;height:6px;background:var(--emerald);border-radius:50%;flex-shrink:0}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ===== ABOUT ===== */
+#about{padding:7rem 0;background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.about-visual-wrap{position:relative}
+.about-img-block{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.about-img-bg{background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 60%);min-height:420px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-radius:20px}
+.about-img-bg::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.05) 1px,transparent 1px);background-size:24px 24px}
+.about-illustration{font-size:6rem;position:relative;z-index:1;text-align:center;line-height:1.4}
+.about-overlay-card{position:absolute;bottom:-20px;right:-20px;background:white;border-radius:16px;padding:1.4rem 1.8rem;box-shadow:var(--shadow-lg);z-index:2}
+.aoc-num{font-family:var(--fd);font-size:2.5rem;font-weight:900;color:var(--blue-v);line-height:1}
+.aoc-label{font-family:var(--fb);font-size:0.72rem;color:var(--muted);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-top:2px}
+.about-accent{position:absolute;top:-18px;left:-18px;width:70px;height:70px;background:linear-gradient(135deg,var(--emerald),var(--emerald-l));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:2rem;box-shadow:0 8px 24px rgba(5,150,105,0.35);z-index:2}
+.about-text-wrap .section-sub{max-width:100%}
+.about-text-wrap p{color:var(--muted);line-height:1.8;margin-bottom:1.2rem;font-size:1rem}
+.about-text-wrap p strong{color:var(--text);font-weight:600}
+.about-urdu{background:linear-gradient(135deg,var(--light),rgba(5,150,105,0.06));border-left:3px solid var(--emerald);padding:1.2rem 1.5rem;border-radius:0 12px 12px 0;margin:2rem 0;direction:rtl;text-align:right}
+.about-urdu p{font-family:'Noto Nastaliq Urdu','Traditional Arabic',serif;font-size:1.1rem;color:var(--navy);font-weight:600;margin:0;direction:rtl}
+.about-list{display:flex;flex-direction:column;gap:0.7rem;margin-top:1.5rem}
+.about-li{display:flex;align-items:center;gap:0.8rem;font-size:0.9rem;color:var(--text);font-weight:500}
+.about-li::before{content:"✓";min-width:22px;height:22px;background:linear-gradient(135deg,var(--emerald),var(--emerald-l));color:white;border-radius:50%;font-size:0.65rem;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0}
+
+/* ===== PROGRAMS ===== */
+#programs{padding:7rem 0;background:var(--off)}
+.programs-header{text-align:center;margin-bottom:4rem}
+.programs-header .divider{margin:1.2rem auto 0}
+.programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.prog-card{background:white;border:1px solid var(--border);border-radius:18px;padding:2.2rem;position:relative;overflow:hidden;transition:all 0.35s;cursor:default;box-shadow:0 2px 12px rgba(12,30,62,0.05)}
+.prog-card::before{content:"";position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue-v),var(--emerald));transform:scaleX(0);transition:transform 0.4s ease;transform-origin:left}
+.prog-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:rgba(35,86,180,0.2)}
+.prog-card:hover::before{transform:scaleX(1)}
+.prog-icon-wrap{width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin-bottom:1.5rem;position:relative;z-index:1}
+.ic-blue{background:linear-gradient(135deg,rgba(35,86,180,0.1),rgba(74,144,217,0.1))}
+.ic-green{background:linear-gradient(135deg,rgba(5,150,105,0.1),rgba(52,211,153,0.1))}
+.ic-gold{background:linear-gradient(135deg,rgba(201,168,76,0.12),rgba(250,204,21,0.1))}
+.ic-navy{background:linear-gradient(135deg,rgba(12,30,62,0.08),rgba(26,56,110,0.1))}
+.prog-title{font-family:var(--fd);font-size:1.35rem;font-weight:800;color:var(--navy);margin-bottom:0.6rem;letter-spacing:0.3px}
+.prog-desc{font-size:0.88rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem}
+.prog-tags{display:flex;flex-wrap:wrap;gap:0.4rem}
+.ptag{font-family:var(--fb);font-size:0.65rem;font-weight:600;color:var(--blue-v);background:rgba(35,86,180,0.07);padding:0.25rem 0.7rem;border-radius:50px;letter-spacing:0.5px}
+.ptag.green{color:var(--emerald);background:rgba(5,150,105,0.07)}
+.prog-badge{position:absolute;top:1.5rem;right:1.5rem;font-family:var(--fb);font-size:0.6rem;font-weight:700;color:white;background:var(--emerald);padding:0.2rem 0.6rem;border-radius:50px;letter-spacing:1px;text-transform:uppercase}
+
+/* ===== WHY CHOOSE US ===== */
+#why{padding:7rem 0;background:var(--white)}
+.why-layout{display:grid;grid-template-columns:0.9fr 1.1fr;gap:5rem;align-items:center}
+.why-visual{position:relative}
+.why-main-card{background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:24px;padding:3rem;color:white;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
+.why-main-card::before{content:"";position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(255,255,255,0.06),transparent 70%);border-radius:50%}
+.why-main-card::after{content:"";position:absolute;bottom:-40px;left:-40px;width:150px;height:150px;background:radial-gradient(circle,rgba(5,150,105,0.15),transparent 70%);border-radius:50%}
+.wmc-head{font-family:var(--fb);font-size:0.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--emerald-l);margin-bottom:1rem}
+.wmc-title{font-family:var(--fd);font-size:2rem;font-weight:900;color:white;line-height:1.15;margin-bottom:1.5rem}
+.wmc-stat-row{display:flex;gap:2rem;margin-bottom:2rem}
+.wmc-stat{text-align:center}
+.wmc-num{font-family:var(--fd);font-size:2.2rem;font-weight:900;color:white;line-height:1}
+.wmc-lab{font-size:0.68rem;color:rgba(255,255,255,0.55);text-transform:uppercase;letter-spacing:1px;font-weight:500}
+.rating-row{display:flex;align-items:center;gap:0.8rem;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:1rem 1.2rem}
+.stars{color:#fbbf24;font-size:1.1rem;letter-spacing:1px}
+.rating-val{font-family:var(--fd);font-size:1.6rem;font-weight:900;color:white}
+.rating-label{font-size:0.78rem;color:rgba(255,255,255,0.7)}
+.mini-cards{position:absolute;right:-30px;top:30%;display:flex;flex-direction:column;gap:0.8rem}
+.mc{background:white;border-radius:12px;padding:0.7rem 0.9rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:0.6rem;min-width:160px}
+.mc-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.mc-dot.gr{background:var(--emerald)}
+.mc-dot.bl{background:var(--blue-v)}
+.mc-text{font-family:var(--fb);font-size:0.72rem;font-weight:600;color:var(--text)}
+.why-cards{display:flex;flex-direction:column;gap:1.2rem}
+.why-card{display:flex;gap:1.3rem;padding:1.5rem;border:1px solid var(--border);border-radius:16px;background:white;transition:all 0.3s;box-shadow:0 2px 10px rgba(12,30,62,0.04)}
+.why-card:hover{border-color:rgba(35,86,180,0.25);box-shadow:var(--shadow);transform:translateX(6px)}
+.wc-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.wc-body{}
+.wc-title{font-family:var(--fd);font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:0.3rem}
+.wc-desc{font-size:0.85rem;color:var(--muted);line-height:1.6}
+
+/* ===== TESTIMONIALS ===== */
+#testimonials{padding:7rem 0;background:var(--off)}
+.testi-header{text-align:center;margin-bottom:3.5rem}
+.testi-header .divider{margin:1.2rem auto}
+.rating-overview{display:inline-flex;align-items:center;gap:1.2rem;background:white;border:1px solid var(--border);border-radius:50px;padding:0.8rem 1.8rem;box-shadow:var(--shadow);margin-top:1rem}
+.ro-num{font-family:var(--fd);font-size:2rem;font-weight:900;color:var(--navy)}
+.ro-stars{display:flex;flex-direction:column;gap:1px}
+.ro-star-row{color:#fbbf24;font-size:0.9rem}
+.ro-count{font-size:0.72rem;color:var(--muted);font-weight:500}
+.ro-label{font-family:var(--fd);font-size:1.1rem;font-weight:700;color:var(--navy);border-left:1px solid var(--border);padding-left:1.2rem}
+.testi-slider-wrap{overflow:hidden;position:relative}
+.testi-slider{display:flex;gap:1.5rem;transition:transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94)}
+.testi-card{min-width:calc(33.333% - 1rem);background:white;border:1px solid var(--border);border-radius:18px;padding:2rem;flex-shrink:0;box-shadow:0 2px 12px rgba(12,30,62,0.05);transition:all 0.3s}
+.testi-card:hover{border-color:rgba(35,86,180,0.2);box-shadow:var(--shadow)}
+.tc-stars{color:#fbbf24;font-size:0.95rem;margin-bottom:1rem;letter-spacing:1px}
+.tc-text{font-size:0.92rem;color:var(--muted);line-height:1.75;margin-bottom:1.5rem;font-style:italic}
+.tc-author{display:flex;align-items:center;gap:0.9rem}
+.tc-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue-v),var(--navy));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.1rem;font-weight:700;color:white;flex-shrink:0}
+.tc-name{font-family:var(--fd);font-size:1rem;font-weight:700;color:var(--navy)}
+.tc-role{font-family:var(--fb);font-size:0.7rem;color:var(--muted);letter-spacing:0.5px}
+.testi-controls{display:flex;justify-content:center;gap:0.8rem;margin-top:2.5rem}
+.tc-btn{width:44px;height:44px;border-radius:50%;border:2px solid var(--border);background:white;color:var(--blue-v);font-size:1.1rem;cursor:pointer;transition:all 0.25s;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(12,30,62,0.08)}
+.tc-btn:hover{background:var(--blue-v);color:white;border-color:var(--blue-v);box-shadow:0 6px 20px rgba(35,86,180,0.3)}
+
+/* ===== ADMISSION ===== */
+#admission{padding:7rem 0;background:linear-gradient(135deg,var(--navy) 0%,var(--blue) 50%,#0c2d5a 100%);position:relative;overflow:hidden}
+#admission::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.04) 1px,transparent 1px);background-size:32px 32px}
+.adm-header{text-align:center;margin-bottom:4rem}
+.adm-header .section-title{color:white}
+.adm-header .section-eyebrow{color:var(--emerald-l)}
+.adm-header .section-eyebrow::before{background:var(--emerald-l)}
+.adm-header .section-sub{color:rgba(255,255,255,0.65);margin:0 auto}
+.adm-header .divider{margin:1.2rem auto;background:linear-gradient(90deg,var(--emerald-l),var(--sky))}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;position:relative;max-width:860px;margin:0 auto}
+.steps::before{content:"";position:absolute;top:48px;left:calc(16.666% + 30px);right:calc(16.666% + 30px);height:2px;background:linear-gradient(90deg,var(--emerald-l),var(--sky),var(--emerald-l));opacity:0.35;z-index:0}
+.step-card{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);backdrop-filter:blur(12px);border-radius:20px;padding:2.5rem 2rem;text-align:center;position:relative;z-index:1;transition:all 0.3s}
+.step-card:hover{background:rgba(255,255,255,0.14);transform:translateY(-6px)}
+.step-num{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--emerald),var(--emerald-l));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.5rem;font-weight:900;color:white;margin:0 auto 1.5rem;box-shadow:0 6px 24px rgba(5,150,105,0.4)}
+.step-title{font-family:var(--fd);font-size:1.3rem;font-weight:800;color:white;margin-bottom:0.7rem}
+.step-desc{font-size:0.88rem;color:rgba(255,255,255,0.6);line-height:1.7}
+.adm-cta{text-align:center;margin-top:3.5rem}
+.adm-cta p{font-size:0.88rem;color:rgba(255,255,255,0.5);margin-top:1rem;font-family:var(--fb)}
+
+/* ===== CONTACT ===== */
+#contact{padding:7rem 0;background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.contact-left{}
+.contact-left .section-sub{max-width:100%;margin-bottom:2.5rem}
+.contact-cards{display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem}
+.c-card{display:flex;align-items:center;gap:1.1rem;padding:1.2rem 1.5rem;border:1px solid var(--border);border-radius:14px;text-decoration:none;transition:all 0.3s;background:white}
+.c-card:hover{border-color:rgba(35,86,180,0.3);box-shadow:var(--shadow);transform:translateX(5px)}
+.c-card-icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.cci-blue{background:linear-gradient(135deg,rgba(35,86,180,0.1),rgba(74,144,217,0.1))}
+.cci-green{background:linear-gradient(135deg,rgba(37,211,102,0.1),rgba(18,140,126,0.1))}
+.cci-fb{background:linear-gradient(135deg,rgba(24,119,242,0.1),rgba(24,119,242,0.05))}
+.cci-red{background:linear-gradient(135deg,rgba(220,38,38,0.08),rgba(239,68,68,0.05))}
+.c-card-info{}
+.c-card-label{font-family:var(--fb);font-size:0.65rem;font-weight:700;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:2px}
+.c-card-value{font-size:0.92rem;color:var(--text);font-weight:600}
+.map-box{border-radius:16px;overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow)}
+.map-placeholder{background:linear-gradient(135deg,var(--light),var(--off));min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem}
+.map-pin{font-size:3rem}
+.map-address{text-align:center;font-size:0.88rem;color:var(--muted);line-height:1.6}
+.map-address strong{display:block;color:var(--navy);font-family:var(--fd);font-size:1.1rem;margin-bottom:0.3rem}
+.map-link{display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 1.3rem;background:var(--blue-v);color:white;border-radius:50px;font-size:0.78rem;font-weight:700;text-decoration:none;transition:all 0.25s;font-family:var(--fb)}
+.map-link:hover{background:var(--navy);box-shadow:0 6px 20px rgba(35,86,180,0.3)}
+.contact-form{background:var(--off);border:1px solid var(--border);border-radius:20px;padding:2.5rem}
+.cf-title{font-family:var(--fd);font-size:1.6rem;font-weight:800;color:var(--navy);margin-bottom:0.4rem}
+.cf-sub{font-size:0.88rem;color:var(--muted);margin-bottom:2rem}
+.fg{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1.2rem}
+.fg label{font-family:var(--fb);font-size:0.7rem;font-weight:700;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase}
+.fg input,.fg textarea,.fg select{background:white;border:1.5px solid var(--border);color:var(--text);font-family:var(--fb);font-size:0.92rem;padding:0.85rem 1rem;border-radius:10px;outline:none;transition:all 0.25s;width:100%;-webkit-appearance:none}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--blue-v);box-shadow:0 0 0 4px rgba(35,86,180,0.08)}
+.fg select option{background:white}
+.fg textarea{resize:vertical;min-height:110px}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-btn{width:100%;padding:1rem;background:linear-gradient(135deg,var(--blue-v),var(--navy));color:white;font-family:var(--fb);font-size:0.9rem;font-weight:700;border-radius:10px;border:none;cursor:pointer;transition:all 0.3s;letter-spacing:0.5px;margin-top:0.5rem}
+.form-btn:hover{box-shadow:0 8px 28px rgba(35,86,180,0.35);transform:translateY(-2px)}
+.form-ok{display:none;padding:1rem;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.25);border-radius:10px;color:var(--emerald);font-family:var(--fb);font-size:0.85rem;font-weight:600;text-align:center;margin-top:0.5rem}
+
+/* ===== FOOTER ===== */
+footer{background:var(--navy);padding:4rem 5% 2rem}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.08)}
+.footer-brand{}
+.f-logo{display:flex;align-items:center;gap:0.7rem;margin-bottom:1.2rem}
+.fl-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--blue-v),var(--sky));border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:1.3rem;font-weight:900;color:white}
+.fl-name{font-family:var(--fd);font-size:1.3rem;font-weight:900;color:white}
+.fl-sub{font-size:0.65rem;color:rgba(255,255,255,0.4);letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.footer-brand p{font-size:0.88rem;color:rgba(255,255,255,0.45);line-height:1.7;max-width:280px}
+.f-col-title{font-family:var(--fd);font-size:1rem;font-weight:700;color:white;margin-bottom:1.2rem;letter-spacing:0.5px}
+.f-links{display:flex;flex-direction:column;gap:0.6rem}
+.f-links a{font-size:0.85rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
+.f-links a:hover{color:var(--emerald-l)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:2rem;flex-wrap:wrap;gap:1rem}
+.fc{font-size:0.78rem;color:rgba(255,255,255,0.3);font-family:var(--fb)}
+.back-top{display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1.2rem;border:1px solid rgba(255,255,255,0.15);border-radius:50px;font-size:0.75rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:all 0.25s;font-family:var(--fb)}
+.back-top:hover{border-color:var(--emerald-l);color:var(--emerald-l)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1000px){
+  .hero-inner{grid-template-columns:1fr;padding:8rem 5% 5rem;gap:3rem}
+  .hero-visual{order:-1;justify-content:center}
+  .visual-card-main{max-width:320px}
+  .about-grid,.why-layout,.contact-grid{grid-template-columns:1fr;gap:3rem}
+  .about-img-block,.why-visual{max-width:440px}
+  .mini-cards{right:-10px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:3rem}
+  .footer-brand{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .nav-links,.nav-btn{display:none}
+  .hamburger{display:flex}
+  .steps{grid-template-columns:1fr;max-width:360px}
+  .steps::before{display:none}
+  .testi-card{min-width:calc(88% - 1rem)}
+  .fg-row{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  .footer-brand{grid-column:unset}
+  .hero-h1{font-size:clamp(2.2rem,10vw,3.2rem)}
+  .hero-btns{flex-direction:column}
+  .hero-btns .btn-enroll,.hero-btns .btn-call{width:100%;justify-content:center}
+}
+@media(max-width:500px){
+  section{padding:5rem 0}
+  .container{padding:0 4%}
+  footer{padding:3rem 4% 1.5rem}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .contact-form{padding:1.8rem}
+}
+</style>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" onclick="closeMob()">&#10005;</button>
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#programs" onclick="closeMob()">Programs</a>
+  <a href="#why" onclick="closeMob()">Why Us</a>
+  <a href="#testimonials" onclick="closeMob()">Reviews</a>
+  <a href="#admission" onclick="closeMob()">Admission</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+  <a href="https://wa.me/923338774267" target="_blank" class="mob-enroll">&#128172; Enroll Now</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-icon">H</div>
+      <div class="logo-text">
+        <span class="logo-name">Hope Academy</span>
+        <span class="logo-sub">Rawalpindi, Pakistan</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#admission">Admission</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/923338774267?text=Assalam+o+Alaikum!+I+want+to+enroll+my+child+in+Hope+Academy." target="_blank" class="nav-btn">&#10024; Enroll Now</a>
+    <button class="hamburger" onclick="openMob()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-geo">
+    <div class="geo-circle gc1"></div>
+    <div class="geo-circle gc2"></div>
+    <div class="geo-circle gc3"></div>
+  </div>
+  <div class="hero-dots"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-tag"><span class="hero-tag-dot"></span> Admissions Open 2025</div>
+      <h1 class="hero-h1">Building <span class="line2">Bright<br>Futures</span> with<br>Quality Education</h1>
+      <p class="hero-tagline">
+        <span>Academic Excellence</span>
+        <span>Strong Character</span>
+        <span>Real Results</span>
+      </p>
+      <p class="hero-urdu">"Behtareen taleem, roshan mustaqbil."</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/923338774267?text=Assalam+o+Alaikum!+I+want+to+enroll+my+child+in+Hope+Academy." target="_blank" class="btn-enroll">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Enroll Now
+        </a>
+        <a href="tel:+923338774267" class="btn-call">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .67h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-num"><span class="ctr" data-target="500">0</span><sup>+</sup></div>
+          <div class="stat-label">Students</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num"><span class="ctr" data-target="95">0</span><sup>%</sup></div>
+          <div class="stat-label">Exam Success</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num"><span class="ctr" data-target="20">0</span><sup>+</sup></div>
+          <div class="stat-label">Qualified Faculty</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100<sup>%</sup></div>
+          <div class="stat-label">Safe Campus</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="float-badge fb1">
+        <div class="fb-icon gr">🏆</div>
+        <div class="fb-text">Top Academy<br><span>Rawalpindi 2024</span></div>
+      </div>
+      <div class="visual-card-main">
+        <div class="vc-icon">📚</div>
+        <div class="vc-title">Academic Excellence</div>
+        <div class="vc-sub">Consistent results across all classes</div>
+        <div class="vc-progress">
+          <div class="vcp-label"><span>Board Exam Success</span><span style="color:var(--emerald-l)">95%</span></div>
+          <div class="vcp-bar"><div class="vcp-fill f95" style="--fw:95%"></div></div>
+        </div>
+        <div class="vc-progress">
+          <div class="vcp-label"><span>Parent Satisfaction</span><span style="color:var(--emerald-l)">90%</span></div>
+          <div class="vcp-bar"><div class="vcp-fill f90" style="--fw:90%"></div></div>
+        </div>
+        <div class="vc-progress">
+          <div class="vcp-label"><span>Student Retention</span><span style="color:var(--emerald-l)">88%</span></div>
+          <div class="vcp-bar"><div class="vcp-fill f88" style="--fw:88%"></div></div>
+        </div>
+      </div>
+      <div class="float-badge fb2">
+        <div class="fb-icon bl">📋</div>
+        <div class="fb-text">Admissions Open<br><span>Session 2025</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-ind">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-track">
+    <span class="trust-item"><span class="dot"></span> Qualified & Experienced Faculty</span>
+    <span class="trust-item"><span class="dot"></span> Safe & Structured Environment</span>
+    <span class="trust-item"><span class="dot"></span> 95% Board Exam Success Rate</span>
+    <span class="trust-item"><span class="dot"></span> Admissions Open 2025</span>
+    <span class="trust-item"><span class="dot"></span> Dhoke Kashmirian, Rawalpindi</span>
+    <span class="trust-item"><span class="dot"></span> Primary to Secondary Classes</span>
+    <span class="trust-item"><span class="dot"></span> Concept-Based Learning</span>
+    <span class="trust-item"><span class="dot"></span> Parent Communication System</span>
+    <span class="trust-item"><span class="dot"></span> Qualified & Experienced Faculty</span>
+    <span class="trust-item"><span class="dot"></span> Safe & Structured Environment</span>
+    <span class="trust-item"><span class="dot"></span> 95% Board Exam Success Rate</span>
+    <span class="trust-item"><span class="dot"></span> Admissions Open 2025</span>
+    <span class="trust-item"><span class="dot"></span> Dhoke Kashmirian, Rawalpindi</span>
+    <span class="trust-item"><span class="dot"></span> Primary to Secondary Classes</span>
+    <span class="trust-item"><span class="dot"></span> Concept-Based Learning</span>
+    <span class="trust-item"><span class="dot"></span> Parent Communication System</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual-wrap reveal-l">
+        <div class="about-img-block">
+          <div class="about-img-bg">
+            <div class="about-illustration">
+              🎓<br>📖✏️<br>🏫
+            </div>
+          </div>
+          <div class="about-overlay-card">
+            <div class="aoc-num" data-countup="2020">2020</div>
+            <div class="aoc-label">Est. in Rawalpindi</div>
+          </div>
+          <div class="about-accent">⭐</div>
+        </div>
+      </div>
+      <div class="about-text-wrap reveal-r">
+        <span class="section-eyebrow">About Hope Academy</span>
+        <h2 class="section-title">Shaping <span class="em">Minds,</span><br>Building <span class="gn">Character</span></h2>
+        <div class="divider"></div>
+        <p>Hope Academy is a <strong>premium private academy</strong> located in the heart of Dhoke Kashmirian, Rawalpindi. Since our founding, we have been dedicated to delivering an education that is both academically rigorous and deeply enriching for each child's character.</p>
+        <p>We believe every child carries potential that simply needs the right environment to flourish. Our <strong>disciplined yet nurturing approach</strong> ensures students are not just prepared for exams — but for life. With small class sizes, qualified teachers, and a safe campus, we give each student individual attention.</p>
+        <div class="about-urdu">
+          <p>"Yahan sirf parhai nahi — character bhi banaya jata hai."</p>
+        </div>
+        <div class="about-list">
+          <div class="about-li">Mission-driven education with a focus on real understanding</div>
+          <div class="about-li">Safe, structured, and inspiring learning environment</div>
+          <div class="about-li">Strong parent-teacher communication system</div>
+          <div class="about-li">Regular assessments and progress tracking</div>
+          <div class="about-li">Moral values & character development alongside academics</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+  <div class="container">
+    <div class="programs-header reveal">
+      <span class="section-eyebrow">What We Offer</span>
+      <h2 class="section-title">Our <span class="em">Programs</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub" style="margin:0 auto">Carefully structured programs for every stage of your child's academic journey — built for real understanding, not just memorization.</p>
+    </div>
+    <div class="programs-grid">
+      <div class="prog-card reveal">
+        <div class="prog-icon-wrap ic-blue">📗</div>
+        <div class="prog-badge">Ages 4–10</div>
+        <h3 class="prog-title">Primary Classes</h3>
+        <p class="prog-desc">A strong, nurturing foundation for young learners. Focus on literacy, numeracy, Islamiat, and building a love for learning through activity-based teaching.</p>
+        <div class="prog-tags">
+          <span class="ptag">Nursery – Grade 5</span>
+          <span class="ptag green">Foundation First</span>
+        </div>
+      </div>
+      <div class="prog-card reveal">
+        <div class="prog-icon-wrap ic-green">📘</div>
+        <div class="prog-badge" style="background:var(--blue-v)">Ages 11–17</div>
+        <h3 class="prog-title">Secondary Classes</h3>
+        <p class="prog-desc">Comprehensive secondary education aligned with national board curriculum. Science, humanities, mathematics — all taught by subject specialists.</p>
+        <div class="prog-tags">
+          <span class="ptag">Grade 6 – Grade 10</span>
+          <span class="ptag green">Board Ready</span>
+        </div>
+      </div>
+      <div class="prog-card reveal">
+        <div class="prog-icon-wrap ic-gold">✏️</div>
+        <h3 class="prog-title">Tuition & Exam Prep</h3>
+        <p class="prog-desc">Focused tuition for students who need extra support or are preparing for board and competitive exams. Intensive, targeted, results-driven sessions.</p>
+        <div class="prog-tags">
+          <span class="ptag">All Boards</span>
+          <span class="ptag green">Weekend Batches</span>
+        </div>
+      </div>
+      <div class="prog-card reveal">
+        <div class="prog-icon-wrap ic-navy">🧠</div>
+        <h3 class="prog-title">Concept-Based Learning</h3>
+        <p class="prog-desc">Our signature teaching method. We don't just teach students to pass — we teach them to <em>understand</em>. Critical thinking, problem solving, and deep comprehension.</p>
+        <div class="prog-tags">
+          <span class="ptag">All Classes</span>
+          <span class="ptag green">Our Method</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="container">
+    <div class="why-layout">
+      <div class="why-visual reveal-l">
+        <div class="why-main-card">
+          <div class="wmc-head">[ Our Results ]</div>
+          <h3 class="wmc-title">Trusted by<br>Hundreds of<br>Families</h3>
+          <div class="wmc-stat-row">
+            <div class="wmc-stat">
+              <div class="wmc-num" data-target="500">0+</div>
+              <div class="wmc-lab">Students</div>
+            </div>
+            <div class="wmc-stat">
+              <div class="wmc-num" data-target="95">0%</div>
+              <div class="wmc-lab">Success Rate</div>
+            </div>
+            <div class="wmc-stat">
+              <div class="wmc-num">5+</div>
+              <div class="wmc-lab">Years</div>
+            </div>
+          </div>
+          <div class="rating-row">
+            <span class="stars">★★★★½</span>
+            <span class="rating-val">4.5</span>
+            <div class="rating-label"><strong style="color:white;font-size:0.92rem">Good School</strong><br>Rated by parents</div>
+          </div>
+        </div>
+        <div class="mini-cards">
+          <div class="mc"><span class="mc-dot gr"></span><span class="mc-text">Safe Campus</span></div>
+          <div class="mc"><span class="mc-dot bl"></span><span class="mc-text">Active Parent Portal</span></div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <span class="section-eyebrow">Why Choose Us</span>
+        <h2 class="section-title">The <span class="em">Hope Academy</span><br><span class="gn">Difference</span></h2>
+        <div class="divider"></div>
+        <div class="why-cards">
+          <div class="why-card reveal">
+            <div class="wc-icon ic-blue">👩‍🏫</div>
+            <div class="wc-body">
+              <h4 class="wc-title">Qualified & Experienced Teachers</h4>
+              <p class="wc-desc">Every teacher at Hope Academy holds a formal qualification and is selected for both academic ability and genuine care for students.</p>
+            </div>
+          </div>
+          <div class="why-card reveal">
+            <div class="wc-icon ic-green">🔒</div>
+            <div class="wc-body">
+              <h4 class="wc-title">Safe & Structured Environment</h4>
+              <p class="wc-desc">Strict campus discipline, CCTV monitoring, and a structured daily routine ensure every child is safe and focused.</p>
+            </div>
+          </div>
+          <div class="why-card reveal">
+            <div class="wc-icon ic-gold">🎯</div>
+            <div class="wc-body">
+              <h4 class="wc-title">Result-Oriented Teaching System</h4>
+              <p class="wc-desc">Monthly tests, report cards, and a data-driven teaching approach that makes sure every student is progressing on track.</p>
+            </div>
+          </div>
+          <div class="why-card reveal">
+            <div class="wc-icon ic-navy">💬</div>
+            <div class="wc-body">
+              <h4 class="wc-title">Active Parent Communication</h4>
+              <p class="wc-desc">We keep parents informed and involved. Regular meetings, progress updates via WhatsApp, and an open-door policy for every family.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testi-header reveal">
+      <span class="section-eyebrow">Parent Reviews</span>
+      <h2 class="section-title">What <span class="em">Parents</span> Say</h2>
+      <div class="divider"></div>
+      <div class="rating-overview">
+        <span class="ro-num">4.5</span>
+        <div class="ro-stars">
+          <div class="ro-star-row">★★★★½</div>
+          <div class="ro-count">Based on parent reviews</div>
+        </div>
+        <span class="ro-label">Good School ✓</span>
+      </div>
+    </div>
+    <div class="testi-slider-wrap reveal">
+      <div class="testi-slider" id="testiSlider">
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"My son's grades improved dramatically after joining Hope Academy. The teachers are genuinely dedicated and always available. We are so happy with our decision."</p>
+          <div class="tc-author"><div class="tc-avatar">MN</div><div><div class="tc-name">Muhammad Naveed</div><div class="tc-role">Parent · Grade 6 Student</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"The environment here is exactly what I wanted for my daughter. Safe, disciplined, and encouraging. Hope Academy truly builds character alongside academics."</p>
+          <div class="tc-author"><div class="tc-avatar">SA</div><div><div class="tc-name">Sana Akhtar</div><div class="tc-role">Parent · Grade 4 Student</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="tc-stars">★★★★½</div>
+          <p class="tc-text">"Excellent teaching quality and very cooperative staff. The principal personally follows up on each student's progress. This level of attention is rare to find."</p>
+          <div class="tc-author"><div class="tc-avatar">AK</div><div><div class="tc-name">Asif Karim</div><div class="tc-role">Parent · Grade 8 Student</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"My child was struggling with maths but the concept-based approach at Hope Academy turned everything around. Highly recommended for any parent in Rawalpindi."</p>
+          <div class="tc-author"><div class="tc-avatar">RB</div><div><div class="tc-name">Rubina Bibi</div><div class="tc-role">Parent · Grade 5 Student</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-text">"The exam preparation sessions are excellent. My daughter scored A grade in all subjects. The teachers go above and beyond for every student. Truly blessed to have found this academy."</p>
+          <div class="tc-author"><div class="tc-avatar">FH</div><div><div class="tc-name">Farida Hassan</div><div class="tc-role">Parent · Matric Student</div></div></div>
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="tc-btn" onclick="slideT(-1)">&#8592;</button>
+        <button class="tc-btn" onclick="slideT(1)">&#8594;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSION -->
+<section id="admission">
+  <div class="container">
+    <div class="adm-header reveal">
+      <span class="section-eyebrow">Simple & Easy</span>
+      <h2 class="section-title">Admission <span style="color:var(--emerald-l)">Process</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">Enrolling your child is simple. Just follow these three easy steps and your child will be on their way to a brighter future.</p>
+    </div>
+    <div class="steps">
+      <div class="step-card reveal">
+        <div class="step-num">1</div>
+        <h3 class="step-title">Contact Us</h3>
+        <p class="step-desc">Call or WhatsApp us on +92 333 8774267 to express your interest and ask any questions you may have about our programs.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">2</div>
+        <h3 class="step-title">Visit Campus</h3>
+        <p class="step-desc">Come visit Hope Academy in person. Meet the principal, tour the campus, and see the learning environment your child will thrive in.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">3</div>
+        <h3 class="step-title">Enroll &amp; Begin</h3>
+        <p class="step-desc">Complete the simple admission form, submit required documents, and your child is officially part of the Hope Academy family!</p>
+      </div>
+    </div>
+    <div class="adm-cta reveal">
+      <a href="https://wa.me/923338774267?text=Assalam+o+Alaikum!+I+want+to+enroll+my+child+in+Hope+Academy." target="_blank" class="btn-enroll" style="font-size:1rem;padding:1.1rem 2.8rem;border-radius:50px">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Start Enrollment on WhatsApp
+      </a>
+      <p>Zero waiting list. Secure your child's seat today.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left reveal-l">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">We'd Love to<br><span class="em">Hear From You</span></h2>
+        <div class="divider"></div>
+        <p class="section-sub">Reach out via WhatsApp, call us directly, or fill the form and we'll get back to you promptly. We're here for every question.</p>
+        <div class="contact-cards">
+          <a href="tel:+923338774267" class="c-card">
+            <div class="c-card-icon cci-blue">📞</div>
+            <div class="c-card-info"><div class="c-card-label">Call Us</div><div class="c-card-value">+92 333 8774267</div></div>
+          </a>
+          <a href="https://wa.me/923338774267" target="_blank" class="c-card">
+            <div class="c-card-icon cci-green">💬</div>
+            <div class="c-card-info"><div class="c-card-label">WhatsApp</div><div class="c-card-value">Chat with us directly</div></div>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="c-card">
+            <div class="c-card-icon cci-fb">📘</div>
+            <div class="c-card-info"><div class="c-card-label">Facebook</div><div class="c-card-value">Hope Academy Official Page</div></div>
+          </a>
+        </div>
+        <div class="map-box">
+          <div class="map-placeholder">
+            <span class="map-pin">📍</span>
+            <div class="map-address">
+              <strong>Hope Academy</strong>
+              DK-324, E-3 Dhoke Kashmirian<br>Rawalpindi, Punjab, Pakistan
+            </div>
+            <a href="https://maps.google.com/?q=Dhoke+Kashmirian+Rawalpindi" target="_blank" class="map-link">Open in Google Maps &#8599;</a>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <div class="contact-form">
+          <h3 class="cf-title">Send an Enquiry</h3>
+          <p class="cf-sub">Fill the form below and we'll contact you within a few hours.</p>
+          <form id="contactForm">
+            <div class="fg-row">
+              <div class="fg"><label>Parent Name</label><input type="text" placeholder="Your full name" required/></div>
+              <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="+92 300 0000000" required/></div>
+            </div>
+            <div class="fg"><label>Child's Name</label><input type="text" placeholder="Student's name" required/></div>
+            <div class="fg">
+              <label>Class / Grade</label>
+              <select required>
+                <option value="" disabled selected>Select class...</option>
+                <option>Nursery / KG</option>
+                <option>Grade 1 – 3</option>
+                <option>Grade 4 – 5</option>
+                <option>Grade 6 – 8</option>
+                <option>Grade 9 – 10 (Matric)</option>
+                <option>Tuition / Exam Prep</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label>Programme</label>
+              <select>
+                <option value="" disabled selected>Interested in...</option>
+                <option>Full Admission (Regular)</option>
+                <option>Tuition Only</option>
+                <option>Board Exam Preparation</option>
+                <option>Just Enquiring</option>
+              </select>
+            </div>
+            <div class="fg"><label>Message (Optional)</label><textarea placeholder="Any questions or special requirements..."></textarea></div>
+            <button type="submit" class="form-btn">Send Enquiry &#8594;</button>
+            <div class="form-ok" id="formOk">✓ Received! We'll contact you soon. JazakAllah Khair 🤍</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="f-logo">
+        <div class="fl-icon">H</div>
+        <div><div class="fl-name">Hope Academy</div><div class="fl-sub">Rawalpindi, Pakistan</div></div>
+      </div>
+      <p>Building bright futures through quality education and strong character. Trusted by hundreds of families across Rawalpindi since 2020.</p>
+    </div>
+    <div>
+      <h4 class="f-col-title">Quick Links</h4>
+      <div class="f-links">
+        <a href="#about">About Us</a>
+        <a href="#programs">Our Programs</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div>
+      <h4 class="f-col-title">Contact</h4>
+      <div class="f-links">
+        <a href="tel:+923338774267">📞 +92 333 8774267</a>
+        <a href="https://wa.me/923338774267" target="_blank">💬 WhatsApp Us</a>
+        <a href="https://www.facebook.com" target="_blank">📘 Facebook Page</a>
+        <a href="#" style="color:rgba(255,255,255,0.3);pointer-events:none">📍 DK-324, E-3 Dhoke Kashmirian</a>
+        <a href="#" style="color:rgba(255,255,255,0.3);pointer-events:none">Rawalpindi, Pakistan</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="fc">© 2025 Hope Academy · Dhoke Kashmirian, Rawalpindi · All Rights Reserved</p>
+    <a href="#hero" class="back-top">↑ Back to Top</a>
+  </div>
+</footer>
+
+<script>
+// NAV SCROLL
+var nav=document.getElementById("navbar");
+window.addEventListener("scroll",function(){
+  if(window.scrollY>60){nav.classList.add("scrolled");}
+  else{nav.classList.remove("scrolled");}
+});
+
+// MOB MENU
+function openMob(){document.getElementById("mobMenu").classList.add("open");document.body.style.overflow="hidden";}
+function closeMob(){document.getElementById("mobMenu").classList.remove("open");document.body.style.overflow="";}
+
+// REVEAL
+function revealAll(){document.querySelectorAll(".reveal,.reveal-l,.reveal-r").forEach(function(el){el.classList.add("vis");});}
+if("IntersectionObserver" in window){
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e,i){
+      if(e.isIntersecting){
+        setTimeout(function(){e.target.classList.add("vis");},i*70);
+        obs.unobserve(e.target);
+      }
+    });
+  },{threshold:0.06,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll(".reveal,.reveal-l,.reveal-r").forEach(function(el){obs.observe(el);});
+  setTimeout(revealAll,2800);
+}else{revealAll();}
+
+// HERO COUNTER
+var heroCountDone=false;
+function runHeroCount(){
+  if(heroCountDone)return;heroCountDone=true;
+  document.querySelectorAll(".ctr[data-target]").forEach(function(el){
+    var t=parseInt(el.dataset.target),s=0,step=t/80;
+    var iv=setInterval(function(){s+=step;if(s>=t){el.textContent=t;clearInterval(iv);}else{el.textContent=Math.floor(s);}},16);
+  });
+}
+setTimeout(runHeroCount,1400);
+
+// WHY COUNTERS
+var whyDone=false;
+var whyObs=new IntersectionObserver(function(entries){
+  if(entries[0].isIntersecting&&!whyDone){
+    whyDone=true;
+    document.querySelectorAll(".wmc-stat .wmc-num[data-target]").forEach(function(el){
+      var raw=parseInt(el.dataset.target),suf=el.textContent.replace(/[0-9]/g,"");
+      var s=0,step=raw/80;
+      var iv=setInterval(function(){s+=step;if(s>=raw){el.textContent=raw+suf;clearInterval(iv);}else{el.textContent=Math.floor(s)+suf;}},16);
+    });
+    whyObs.disconnect();
+  }
+});
+var ws=document.querySelector(".why-main-card");if(ws)whyObs.observe(ws);
+
+// TESTIMONIAL SLIDER
+var tsEl=document.getElementById("testiSlider"),tsIdx=0;
+function getVisibleT(){return window.innerWidth<=600?1:window.innerWidth<=900?2:3;}
+function slideT(dir){
+  var cards=tsEl.querySelectorAll(".testi-card"),vis=getVisibleT(),max=cards.length-vis;
+  tsIdx=Math.max(0,Math.min(tsIdx+dir,max));
+  var w=cards[0].offsetWidth+24;
+  tsEl.style.transform="translateX(-"+(tsIdx*w)+"px)";
+}
+var autoT=setInterval(function(){if(tsIdx>=document.querySelectorAll(".testi-card").length-getVisibleT()){tsIdx=-1;}slideT(1);},5000);
+tsEl.addEventListener("mouseenter",function(){clearInterval(autoT);});
+
+// CONTACT FORM
+document.getElementById("contactForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  var btn=this.querySelector(".form-btn");
+  btn.textContent="Sending...";btn.disabled=true;
+  setTimeout(function(){btn.style.display="none";document.getElementById("formOk").style.display="block";},1200);
+});
+
+// FILL BAR KEYFRAMES (fix for CSS custom property animation)
+document.querySelectorAll(".vcp-fill").forEach(function(el){
+  var fw=el.style.getPropertyValue("--fw");
+  if(fw){el.style.setProperty("--fw",fw);}
+});
+</script>
+</body>
+</html>
